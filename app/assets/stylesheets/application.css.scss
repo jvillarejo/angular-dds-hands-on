@@ -23,3 +23,19 @@
 @import "partials/home";
 @import "partials/search";
 @import "partials/main"; 
+
+.fuerza {
+  font-weight: bold;
+}
+
+.primary-bg {
+  background-color: $primary;
+}
+
+.secondary-bg {
+  background-color: $secondary;
+}
+
+.third-bg {
+  background-color: $third;
+}

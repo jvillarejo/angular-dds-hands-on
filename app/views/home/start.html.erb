@@ -1,2 +1,21 @@
+<div ng-controller="FuerzasCtrl">
+  <h1>{{view.title}}</h1>
 
-<h1>Bienvenido a GOT</h1>
+  <table class="table">
+    <tr>
+      <th>Tipo</th>
+      <th>Casa</th>
+      <th>Dragones</th>
+      <th>Soldados</th>
+      <th>Barcos</th>
+    </tr>
+
+    <tr ng-repeat="fuerza in view.fuerzas" ng-class="view.classByType(fuerza)" class="fuerza">
+      <td>{{fuerza.type}}</td>
+      <td>{{fuerza.casa}}</td>
+      <td>{{fuerza.cantidad_dragones}}</td>
+      <td>{{fuerza.cantidad_soldados}}</td>
+      <td>{{fuerza.cantidad_barcos}}</td>
+    </tr>
+  </table>
+</div>
